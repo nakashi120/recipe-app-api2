@@ -335,7 +335,7 @@ class PrivateRecipeApiTests(TestCase):
             self.assertTrue(exists)
 
     def test_create_ingredient_on_update(self):
-        """Test creating an ingredeint when updating a recipe."""
+        """Test creating an ingredient when updating a recipe."""
         recipe = create_recipe(user=self.user)
 
         payload = {'ingredients': [{'name': 'Limes'}]}
