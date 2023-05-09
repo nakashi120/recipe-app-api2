@@ -404,7 +404,7 @@ class PrivateRecipeApiTests(TestCase):
         self.assertNotIn(serializer3.data, res.data)
 
     def test_filter_by_ingredients(self):
-        """Test filtering rrecipes by ingrdients."""
+        """Test filtering recipes by ingredients."""
         recipe1 = create_recipe(user=self.user, title='Posh Beans on Toast')
         recipe2 = create_recipe(user=self.user, title='Chicken Cacciatore')
         ingredient1 = Ingredient.objects.create(
